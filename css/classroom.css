@@ -1,0 +1,216 @@
+.nabMenuBar {
+  color: black;
+  padding-left: 1%;
+  font-size: 25px;
+}
+.nav-menu-item {
+  text-decoration: none;
+  color: black;
+}
+.nav-menu-item:hover {
+  text-decoration: none;
+  color: black;
+  border-left: 5px solid white;
+  transition: 0.1s;
+}
+.sideNavOpen {
+  height: 100%;
+  width: 23%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: 0.1s;
+  background-color: #f8f9fa;
+}
+.sideNavClose {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: 0.1s;
+  background-color: #f8f9fa;
+}
+.ContentOverlay {
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ContentOverlayClose {
+  display: none;
+}
+.Content {
+  margin-left: 60px;
+  margin-top: 60px;
+  z-index: 5;
+}
+@media (max-width: 575.98px) {
+  .Content {
+    margin-left: 0px;
+  }
+  .sideNavClose {
+    visibility: hidden;
+  }
+  .dropdown-menu[data-bs-popper] {
+    right: -400px;
+  }
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -160px;
+  margin-top: 0.125rem;
+}
+.gbimg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #000),
+    url(../images/Jahedpic.jpg);
+  background-repeat: no-repeat;
+}
+.imgPosition {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
+.cardHover:hover {
+  transform: scale(0.98);
+  transition: all 1s ease;
+}
+.navImg {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.603), #000),
+    url(../images/Jahedpic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+}
+.heroProfile {
+  height: 15rem;
+}
+.heroPosition {
+  top: 24%;
+  left: 44%;
+}
+.postImg {
+  align-self: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+.comment {
+  height: 10%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.commentImg {
+  align-self: initial;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.commentSend {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+.nav-right-pos {
+  position: relative;
+  /* max-width: 300px; */
+}
+.join-class {
+  position: absolute;
+  top: 0;
+  right: 45px;
+}
+
+@media (max-width: 650px) {
+  .nav-right-pos {
+    min-width: 100%;
+  }
+}
+.active {
+  border-bottom: 2px solid #000;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+.textarea-show {
+  display: block;
+}
+#announceOpen:hover {
+  cursor: pointer;
+}
+.asQXV {
+  letter-spacing: 0.01785714em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #3c4043;
+}
+.PazDv {
+  font-size: 0.8rem;
+}
+
+.chatbox {
+  z-index: 10;
+}
+
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  /* border-radius: 70%; */
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  height: 33px;
+  position: absolute;
+  right: 0%;
+  bottom: 8%;
+  width: 12%;
+}
+.index {
+  z-index: 5;
+}
+.hrWidth {
+  width: 95%;
+}
+#profileShow {
+  display: none;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+.accordion-button::after {
+  content: none;
+}
+.positionBtn {
+  position: relative;
+  left: 99%;
+  top: -50px;
+}
+.big-checkbox {
+  width: 20px;
+  height: 20px;
+}

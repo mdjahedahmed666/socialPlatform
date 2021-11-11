@@ -1,0 +1,123 @@
+.skyBlue {
+  background-color: #dd2a7b;
+}
+.skyColor {
+  color: #dd2a7b;
+}
+.smallProfile {
+  width: 8%;
+  height: 8%;
+  border-radius: 50%;
+}
+.smProfile {
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
+}
+.sideProfile {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+.hrWidth {
+  width: 90%;
+}
+.modal-body textarea {
+  border: none;
+  outline: none;
+  border-color: Transparent;
+}
+.cardBodyPadding {
+  padding: 0;
+}
+.imgPadding {
+  padding: 1px;
+}
+.bgGray {
+  background-color: gainsboro;
+}
+.anchor {
+  text-decoration: none;
+}
+.anchor:hover {
+  text-decoration: underline;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+.commentBoxPosition {
+  position: absolute;
+  right: 11%;
+  bottom: 4%;
+  font-size: 24px;
+}
+@media (max-width: 576px) {
+  .commentBoxPosition {
+    right: 18%;
+    bottom: 7%;
+    font-size: 18px;
+  }
+}
+.hr {
+  margin: 0rem 0;
+}
+.simpleProfileBg {
+  background: url(../images/Jahedpic.jpg);
+  width: 100%;
+  height: 8rem;
+  position: relative;
+}
+.simpleProfileImg {
+  position: absolute;
+  top: 15%;
+  left: 37%;
+}
+.cardHover:hover {
+  transform: scale(0.98);
+  transition: all 1s ease;
+}
+#computerClub {
+  background: url(../images/header/computerClub.jpg);
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+}
+.clubPosition {
+  position: absolute;
+  top: -75px;
+  left: 10%;
+}
+.clubProfile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.userProfile {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+.userPosition {
+  position: absolute;
+  top: -45%;
+  left: 5%;
+  overflow: hidden;
+  clear: both;
+}
+.active {
+  border-bottom: 2px solid #000;
+}
+.cursor {
+  cursor: pointer;
+}
+.notiCount {
+  position: absolute;
+  left: 8px;
+  top: -15px;
+}
+#proffileBg {
+  background: url(../images/jahedg.jpg);
+  width: 100%;
+  height: 20rem;
+  background-position: 50% 30%;
+}

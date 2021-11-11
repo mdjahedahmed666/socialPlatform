@@ -1,0 +1,1377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/ac87235b0c.js" crossorigin="anonymous"></script>
+
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/social.css">
+
+    <title>Class</title>
+</head>
+
+<body>
+    <header class="p-3 sticky-top bg-light">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="d-flex align-items-center pb-1 mb-lg-0 text-dark text-decoration-none fs-2 fw-bold">
+                    LUSP
+                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg> -->
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-4">
+                    <li><a href="social.html" class="nav-link px-2 link-secondary">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Home</a>
+                    </li>
+                    <li><a href="friends.html" class="nav-link px-2 link-dark">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            Connection</a>
+                    </li>
+                    <li><a href="innovation.html" class="nav-link px-2 link-dark">
+                            <i class="fas fa-lightbulb"></i>
+                            Innovation</a>
+                    </li>
+                    <li><a href="message.html" class="nav-link px-2 link-dark">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            Messaging</a>
+                    </li>
+                    <!-- <li><a href="#" class="nav-link px-2 link-dark">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            Notification</a>
+                    </li> -->
+                    <li class="dropdown">
+                        <a class="nav-link px-2 link-dark" data-bs-toggle="dropdown" href="allNotification.html">
+                            <i class="fa fa-bell-o position-relative" aria-hidden="true"><span
+                                    class="notiCount text-danger fw-bold">5</span></i>
+                            Notification</a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <span class="dropdown-item dropdown-header">5 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-1"></i> Jahed liked your post
+                                <div class="text-muted text-sm">12 hours</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-1"></i>Tanvir commented your post
+                                <div class="text-muted text-sm">12 hours</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file mr-1"></i> 3 new reports
+                                <div class="text-muted text-sm">2 days</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="allnotification.html" class="dropdown-item dropdown-footer">See All
+                                Notifications</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end" style="font-size: 20px;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="clubs.html">Clubs</a></li>
+                        <li><a class="dropdown-item" href="groups.html">Groups</a></li>
+                        <li><a class="dropdown-item" href="setting.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown text-end ps-3">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/Jahedpic.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="setting.html">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Post Section -->
+        <section id="feed" class="">
+            <div class="container">
+                <!-- Header -->
+                <div id="proffileBg" class="position-relative">
+
+                </div>
+
+                <div class="row position-relative">
+                    <div class="userPosition">
+                        <img src="images/jahedpro.jpg" class="img-fluid userProfile p-2 bg-light" alt="">
+                    </div>
+                    <div class="col-md-10 mt-5 ms-sm-5 ms-3">
+                        <h5 class="ms-3 mt-4">Md. Jahed Miah</h5>
+                        <p class="ms-3 mb-0">Web Developer</p>
+                        <p class="text-muted ms-3 mb-0">Sylhet, Bangladesh. <span data-bs-toggle="modal"
+                                data-bs-target="#contactModal"><a href="#" class="anchor">Contact info</a></span>
+                        </p>
+                        <p class="ms-3"><a href="#" class="anchor"><span>46</span> Connections</a></p>
+                        <div class="mb-2">
+                            <a href="#" class="btn btn-primary">Connect</a>
+                            <a href="#" class="btn btn-primary">Message</a>
+                            <a href="#" class="btn btn-primary">Share Profile</a>
+                            <a href="#" class="btn btn-primary">Remove Connection</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                    <div class="col-md-8 mt-2">
+                        <div id="postType">
+                            <div class="card shadow rounded-3 mb-4 bg-light">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="images/Jahedpic.jpg" alt="" class="img-fluid smallProfile me-3">
+                                    <input type="text" class="form-control ps-4 rounded-pill w-75"
+                                        placeholder="What's going on your mind?" data-bs-toggle="modal"
+                                        data-bs-target="#postModal">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <hr class="hrWidth">
+                                </div>
+                                <div class="d-flex align-items-center ps-5">
+                                    <div class="text-center">
+                                        <i class="fa fa-photo " aria-hidden="true"></i>
+                                        <p>Photo</p>
+                                    </div>
+                                    <div class="ps-4 text-center">
+                                        <i class="fa fa-video-camera " aria-hidden="true"></i>
+                                        <p>Video</p>
+                                    </div>
+                                    <div class="ps-4 text-center">
+                                        <i class="fa fa-file" aria-hidden="true"></i>
+                                        <p>File</p>
+                                    </div>
+                                    <div class="ps-4 text-center">
+                                        <i class="fas fa-certificate"></i>
+                                        <p>Celebration</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="post">
+                            <!-- First Card Post -->
+                            <div class="card w-100 bg-light overflow-hidden mb-4">
+                                <div class="card-body cardBodyPadding">
+                                    <div class="d-flex justify-content-between align-items-center ps-3">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid smallProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6>Md Jahed Miah</h6>
+                                                    <small>August 15 at 11.29 pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center pe-3 skyColor">
+                                            <div class="d-none">
+                                                <i class="fa fa-plus pe-2" aria-hidden="true"></i>
+                                                <strong class="">Follow</strong>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                    <li><button class="dropdown-item" type="button">Delete
+                                                            Post</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item" type="button">Copy Post
+                                                            Link</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item" type="button">Report
+                                                            Post</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Enim
+                                            eveniet odio minus ex culpa suscipit nostrum sit illo, pariatur tenetur
+                                            modi?
+                                            Molestias eius labore laudantium!</p>
+                                    </div>
+
+                                    <div>
+                                        <div class="row">
+                                            <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center py-2">
+                                            <div class="d-flex ps-3">
+                                                <i class="fa fa-heart-o pe-2 skyColor" aria-hidden="true"></i>
+                                                <i class="fa fa-heart-o skyColor pe-2" aria-hidden="true"></i>
+                                            </div>
+                                            <a id="totalLike" href="#" class="anchor text-dark textHover">You,Md
+                                                Rejaul
+                                                and
+                                                25 others</a>
+                                        </div>
+                                        <div class="d-flex align-items-center py-2">
+                                            <a href="#" class="anchor text-dark textHover pe-3"><span
+                                                    class="pe-2">25</span>comment</a>
+                                        </div>
+                                    </div>
+                                    <hr class="hr">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center ps-5">
+                                            <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                            <p class="ps-2 pt-3">Likes</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                            <p class="ps-2 pt-3 pe-5">Comment</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa fa-share" aria-hidden="true"></i>
+                                            <p class="ps-2 pt-3 pe-5">Share</p>
+                                        </div>
+                                    </div>
+                                    <hr class="hr">
+                                    <!-- Comment Area -->
+                                    <div id="commentShowArea">
+                                        <div class="d-flex justify-content-between position-relative pt-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid smProfile ms-3 me-2">
+                                            <input type="text" class="form-control ps-4 rounded-pill me-5"
+                                                placeholder="Put your comment">
+                                            <div class="commentBoxPosition">
+                                                <i title="add emoji" class="far fa-frown-open pe-0 pe-sm-2"></i>
+                                                <i title="photo/video" class="fa fa-photo" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <!-- Comment shown -->
+                                        <div id="commentShow">
+                                            <div class="d-flex justify-content-start align-items-center pt-2 mb-2 ms-3">
+                                                <img src="images/Jahedpic.jpg" alt="" class="img-fluid smProfile me-2">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bgGray rounded p-2">
+                                                        <h6>Md Jahed Miah</h6>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Perspiciatis, fugiat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ps-5">
+                                                <p class="pe-2 ms-2">Like</p>
+                                                <div>
+                                                    <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                                    <span class="pe-2 border-end">5</span>
+                                                </div>
+                                                <p class="ps-2">Reply</p>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="d-flex justify-content-start align-items-center ms-5 mb-2">
+                                                    <img src="images/Jahedpic.jpg" alt=""
+                                                        class="img-fluid smProfile me-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="bgGray rounded p-2">
+                                                            <h6>Md Jahed Miah</h6>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit.
+                                                                Perspiciatis, fugiat.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex ps-5 ms-5">
+                                                    <p class="pe-2">Like</p>
+                                                    <div>
+                                                        <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                                        <span class="pe-2 border-end">5</span>
+                                                    </div>
+                                                    <p class="ps-2">Reply</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex justify-content-start align-items-center pt-2 mb-2 ms-3">
+                                                <img src="images/Jahedpic.jpg" alt="" class="img-fluid smProfile me-2">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bgGray rounded p-2">
+                                                        <h6>Md Jahed Miah</h6>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Perspiciatis, fugiat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ps-5">
+                                                <p class="pe-2 ms-2">Like</p>
+                                                <div>
+                                                    <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                                    <span class="pe-2 border-end">5</span>
+                                                </div>
+                                                <p class="ps-2">Reply</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" id="loadMoreComment" class="ps-3 anchor text-dark">load more
+                                            comment..</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Second Card Post -->
+                            <div class="card w-100 bg-light overflow-hidden">
+                                <div class="card-body cardBodyPadding">
+                                    <div class="d-flex justify-content-between align-items-center ps-3">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid smallProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6>Md Jahed Miah</h6>
+                                                    <small>August 15 at 11.29 pm</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center pe-3 skyColor">
+                                            <div class="d-none">
+                                                <i class="fa fa-plus pe-2" aria-hidden="true"></i>
+                                                <strong class="">Follow</strong>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu2"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                                    <li><button class="dropdown-item" type="button">Delete
+                                                            Post</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item" type="button">Copy Post
+                                                            Link</button>
+                                                    </li>
+                                                    <li><button class="dropdown-item" type="button">Report
+                                                            Post</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <p class="card-text p-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Enim
+                                            eveniet odio minus ex culpa suscipit nostrum sit illo, pariatur tenetur
+                                            modi?
+                                            Molestias eius labore laudantium!</p>
+                                    </div>
+
+                                    <div>
+                                        <div class="row">
+                                            <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                            <div class="col-md-3 imgPadding">
+                                                <img src="images/Jahedpic.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center py-2">
+                                            <div class="d-flex ps-3">
+                                                <i class="fa fa-heart-o pe-2 skyColor" aria-hidden="true"></i>
+                                                <i class="fa fa-heart-o skyColor pe-2" aria-hidden="true"></i>
+                                            </div>
+                                            <a id="totalLike" href="#" class="anchor text-dark textHover">You,Md
+                                                Rejaul
+                                                and
+                                                25 others</a>
+                                        </div>
+                                        <div class="d-flex align-items-center py-2">
+                                            <a href="#" class="anchor text-dark textHover pe-3"><span
+                                                    class="pe-2">25</span>comment</a>
+                                        </div>
+                                    </div>
+                                    <hr id="hr">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center ps-5">
+                                            <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                            <p class="ps-2 pt-3">Likes</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                            <p class="ps-2 pt-3 pe-5">Comment</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa fa-share" aria-hidden="true"></i>
+                                            <p class="ps-2 pt-3 pe-5">Share</p>
+                                        </div>
+                                    </div>
+                                    <hr id="hr">
+                                    <!-- Comment Area -->
+                                    <div id="commentShowArea">
+                                        <div class="d-flex justify-content-between position-relative pt-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid smProfile ms-3 me-2">
+                                            <input type="text" class="form-control ps-4 rounded-pill me-5"
+                                                placeholder="Put your comment">
+                                            <div class="commentBoxPosition">
+                                                <i title="add emoji" class="far fa-frown-open pe-0 pe-sm-2"></i>
+                                                <i title="photo/video" class="fa fa-photo" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        <!-- Comment shown -->
+                                        <div id="commentShow">
+                                            <div class="d-flex justify-content-start align-items-center pt-2 mb-2 ms-3">
+                                                <img src="images/Jahedpic.jpg" alt="" class="img-fluid smProfile me-2">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bgGray rounded p-2">
+                                                        <h6>Md Jahed Miah</h6>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Perspiciatis, fugiat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ps-5">
+                                                <p class="pe-2 ms-2">Like</p>
+                                                <div>
+                                                    <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                                    <span class="pe-2 border-end">5</span>
+                                                </div>
+                                                <p class="ps-2">Reply</p>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="d-flex justify-content-start align-items-center ms-5 mb-2">
+                                                    <img src="images/Jahedpic.jpg" alt=""
+                                                        class="img-fluid smProfile me-2">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="bgGray rounded p-2">
+                                                            <h6>Md Jahed Miah</h6>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                elit.
+                                                                Perspiciatis, fugiat.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex ps-5 ms-5">
+                                                    <p class="pe-2">Like</p>
+                                                    <div>
+                                                        <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                                        <span class="pe-2 border-end">5</span>
+                                                    </div>
+                                                    <p class="ps-2">Reply</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex justify-content-start align-items-center pt-2 mb-2 ms-3">
+                                                <img src="images/Jahedpic.jpg" alt="" class="img-fluid smProfile me-2">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="bgGray rounded p-2">
+                                                        <h6>Md Jahed Miah</h6>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Perspiciatis, fugiat.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex ps-5">
+                                                <p class="pe-2 ms-2">Like</p>
+                                                <div>
+                                                    <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
+                                                    <span class="pe-2 border-end">5</span>
+                                                </div>
+                                                <p class="ps-2">Reply</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" id="loadMoreComment" class="ps-3 anchor text-dark">load more
+                                            comment..</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-2">
+                        <!-- Simple Intro -->
+                        <div class="card w-100 mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title pt-2">Intro</h5>
+                                    <i class="fa fa-edit ms-1" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#editProModal"></i>
+                                </div>
+                                <hr>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <p class="card-text ps-2">Full stack web developer
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <p class="card-text ps-2">Student of Computer Science & Engineering at Leading
+                                        University, Sylhet</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <p class="card-text ps-2"><span>46</span>th batch <span>12</span> semester </p>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <p class="card-text ps-2">Lives in Sylhet</p>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <p class="card-text ps-2">From Sylhet</p>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-blog"></i>
+                                    <p class="card-text ps-2"><span>25</span> followers</p>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fas fa-blog"></i>
+                                    <p class="card-text ps-2">Joined<span>September 2021</span></p>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    <a href="#" class="anchor">
+                                        <p class="card-text ps-2">Send Message</p>
+                                    </a>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="#" class="anchor">
+                                        <p class="card-text ps-2"> 01719-373476</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer btn btn-outline-danger">
+                                view More
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="card w-100 mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title pt-2">Education</h5>
+                                    <i class="fa fa-edit" aria-hidden="true" data-bs-toggle="modal"
+                                        data-bs-target="#educationProModal"></i>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fa fa-graduation-cap pt-1" aria-hidden="true"></i>
+                                                <p class="ps-2">Leading University</p>
+                                            </div>
+                                            <i class="fa fa-pencil pb-2" aria-hidden="true" data-bs-toggle="modal"
+                                                data-bs-target="#educationProModal"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Bachelor of Science (BSc),Computer Science and
+                                                Engineering(CSE)</p>
+                                            <p class="mt-0 pt-0">2017 – 2021</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-md-12">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <i class="fa fa-graduation-cap pt-1" aria-hidden="true"></i>
+                                                <p class="ps-2">Dakshin Surma Govt. College, Sylhet</p>
+                                            </div>
+                                            <i class="fa fa-pencil pb-2" aria-hidden="true" data-bs-toggle="modal"
+                                                data-bs-target="#educationProModal"></i>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Degree Name HSC,Field Of Study Science</p>
+                                            <p class="mt-0 pt-0">2015 – 2017</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Photos -->
+                        <div class="card w-100 mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Photos</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted ">See All</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Friends-->
+
+                        <div class="card w-100 mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Friends</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted ">See All</h6>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="images/Jahedpic.jpg" class="img-fluid mb-2" alt="">
+                                        <a href="#" class="anchor" style="font-size: 12px;">
+                                            Md Jahed Miah
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- People you may know -->
+                        <div class="card w-100 mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">People you may know</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted ">See All</h6>
+                                </div>
+
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid sideProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6><a href="#" class="anchor text-dark">Md Jahed Miah</a></h6>
+                                                    <span class="text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <strong class="skyColor">Follow</strong>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid sideProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6><a href="#" class="anchor text-dark">Md Jahed Miah</a></h6>
+                                                    <span class="text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <strong class="skyColor">Follow</strong>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid sideProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6><a href="#" class="anchor text-dark">Md Jahed Miah</a></h6>
+                                                    <span class="text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <strong class="skyColor">Follow</strong>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid sideProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6><a href="#" class="anchor text-dark">Md Jahed Miah</a></h6>
+                                                    <span class="text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <strong class="skyColor">Follow</strong>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                                            <img src="images/Jahedpic.jpg" alt="" class="img-fluid sideProfile me-3">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    <h6><a href="#" class="anchor text-dark">Md Jahed Miah</a></h6>
+                                                    <span class="text-muted">Web Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <strong class="skyColor">Follow</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="clubs" class="d-none">
+            <div class="container ">
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-md-10">
+                            <div class="card bg-light w-100 mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-2 fs-4">Albums</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted mb-2">See All</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <a href="#" class="anchor">
+                                                            <h5 class="card-title text-dark">Mobile Uploads
+                                                            </h5>
+                                                        </a>
+                                                        <a href="#" class="anchor">
+                                                            <p class="text-muted"><span>221</span> items</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <a href="#" class="anchor">
+                                                            <h5 class="card-title text-dark">Timeline Photos
+                                                            </h5>
+                                                        </a>
+                                                        <a href="#" class="anchor">
+                                                            <p class="text-muted"><span>221</span> items</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <a href="#" class="anchor">
+                                                            <h5 class="card-title text-dark">Cover Uploads
+                                                            </h5>
+                                                        </a>
+                                                        <a href="#" class="anchor">
+                                                            <p class="text-muted"><span>221</span> items</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <a href="#" class="anchor">
+                                                            <h5 class="card-title text-dark">Profile Pictures
+                                                            </h5>
+                                                        </a>
+                                                        <a href="#" class="anchor">
+                                                            <p class="text-muted"><span>221</span> items</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light w-100 mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-title mb-2 fs-4">All Photos</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted mb-2">See All</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-3 mb-2">
+                                            <a href="#" class="anchor">
+                                                <div class="card w-100">
+                                                    <div class="card-body">
+                                                        <img src="images/Jahedpic.jpg" class="card-img-top" alt="...">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <!-- Add post Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Create a post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-start align-items-center pt-3 mb-2">
+                        <img src="images/Jahedpic.jpg" alt="" class="img-fluid smallProfile me-3">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h6>Md Jahed Miah</h6>
+                                <select class="form-select rounded-pill" name="" id="">
+                                    <option value="">Friends</option>
+                                    <option value="">Public</option>
+                                    <option value="">Only me</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea class="form-control" name="" id="" cols="30" rows="4"
+                            placeholder="what you would like to write?"></textarea>
+                    </div>
+                    <img src="" alt="">
+                    <div class="d-flex justify-content-between">
+                        <p>add hashtag</p>
+                        <i title="add emoji" class="far fa-frown-open fa-2x"></i>
+                    </div>
+                    <div class="card shadow">
+                        <div class="d-flex justify-content-between p-3">
+                            <span>Add to your post</span>
+                            <div>
+                                <i title="upload photo" class="fa fa-photo fa-2x" aria-hidden="true"></i>
+                                <i title="upload video" class="fa fa-video-camera fa-2x ps-2" aria-hidden="true"></i>
+                                <i title="upload file" class="fa fa-file fa-2x ps-2" aria-hidden="true"></i>
+                                <i title="add tag" class="fa fa-user-circle fa-2x ps-2" aria-hidden="true"></i>
+                                <i title="check-in" class="fas fa-map-marker-alt fa-2x ps-2"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary px-3">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="contactModalLabel">Md. Jahed Miah</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between align-items-center pt-3 mb-2">
+                        <p class="fs-5">Contact Info</p>
+                        <i class="fa fa-edit pb-2" aria-hidden="true" data-bs-toggle="modal"
+                            data-bs-target="#contactEditModal"></i>
+                    </div>
+
+                    <div>
+                        <div class=" d-flex align-items-center">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            <h6 class="fs-6 ps-2 pt-2">Your Profile</h6>
+                        </div>
+                        <a href="#" class="anchor">lucommunity.com/lusp/md-jahed-miah-1601b3211</a>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pt-3">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <h6 class="fs-6 ps-2 pt-2">Email</h6>
+                        </div>
+                        <a href="#" class="anchor">mdjahedahmed512@gmail.com</a>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center pt-3">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <h6 class="fs-6 ps-2 pt-2">Phone</h6>
+                        </div>
+                        <a href="#" class="anchor">01797213005</a>
+                    </div>
+                    <div class="">
+                        <div class="d-flex align-items-center pt-3">
+                            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                            <h6 class="fs-6 ps-2 pt-2">Birthday</h6>
+                        </div>
+                        <p>January 16</p>
+                    </div>
+                    <div class="">
+                        <div class="d-flex align-items-center pt-3">
+                            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                            <h6 class="fs-6 ps-2 pt-2">Connected</h6>
+                        </div>
+                        <p>January 16, 2021</p>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center pt-3">
+                            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                            <h6 class="fs-6 ps-2 pt-2">Address</h6>
+                        </div>
+                        <p>Sylhet, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Contact Edit Modal -->
+    <div class="modal fade" id="contactEditModal" tabindex="-1" aria-labelledby="contactEditModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="contactEditModalLabel">
+                        Edit contact info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-3 mb-1">
+                        <h6 class="">Profile URL</h6>
+                        <a href="#" class="anchor">lucommunity.com/lusp/md-jahed-miah-1601b3211</a>
+                    </div>
+                    <div class="pt-3 mb-1">
+                        <h6 class="">Website URL</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="pt-3 mb-1">
+                        <h6 class="">Name</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="pt-3 mb-1">
+                        <h6 class="">Email</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="pt-3 mb-1">
+                        <h6 class="">Phone</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="pt-3 mb-1">
+                        <h6 class="">Address</h6>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="pt-3 mb-4">
+                        <h6 class="">Birthday</h6>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="pt-3 mb-4">
+                        <h6 class="">Connected</h6>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Profile Edit Modal -->
+    <div class="modal fade" id="editProModal" tabindex="-1" aria-labelledby="editProModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="editProModalLabel">
+                        Edit intro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-3 mb-1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="">Position</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6 class="">Education</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="">Batch</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="">Semester</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="">Home Town</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="">Current Town</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <h6 class="">Industry</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Education Edit Modal -->
+    <div class="modal fade" id="educationProModal" tabindex="-1" aria-labelledby="educationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="educationModalLabel">
+                        Add Education</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="pt-3 mb-1">
+                        <div class="row">
+                            <div class="col-md-12 mb-2">
+                                <h6 class="">School</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-2">
+                                <h6 class="">Degree</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-2">
+                                <h6 class="">Field of Study</h6>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-2">
+                                <h6 class="">Start date</h6>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <h6 class="">End date</h6>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <input type="submit" class="form-control btn-outline-primary">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/social.js"></script>
+
+    <script>
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        $(document).on('click', '[data-bs-toggle="lightbox"]', function (e) {
+            e.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+</body>
+
+</html>
